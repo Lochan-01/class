@@ -1,0 +1,125 @@
+
+Student@M316-01 MINGW64 ~/Desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/ANNAPURNESHWARI/Desktop/git/.git/
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config--global user.name"Lochan-01"
+git: 'config--global' is not a git command. See 'git --help'.
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global user.name"Lochan-01"
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global user.email"lochanlochu1310@gmail.com"
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global --list
+core.editor="C:\Users\ANNAPURNESHWARI\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=Darshxn02
+user.email=vvce23cse0007@vvce.ac.in
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global user.name "Lochan-01"
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global user.email "lochanlochu1310@gmail.com"
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git config --global --list
+core.editor="C:\Users\ANNAPURNESHWARI\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=Lochan-01
+user.email=lochanlochu1310@gmail.com
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git add .
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   program1.txt
+
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git commit -m "v1"
+[master (root-commit) 7e44f4f] v1
+ 1 file changed, 2 insertions(+)
+ create mode 100644 program1.txt
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git add .
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git commit -m "v2"
+[master d96ee4f] v2
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git add .
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git commit -m "v3"
+[master e872698] v3
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git add .
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git commit -m "v4"
+[master 37fd266] v4
+ 1 file changed, 1 insertion(+)
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git log
+commit 37fd266d306fd4cb5669d92bbdb6ee261bdfd156 (HEAD -> master)
+Author: Lochan-01 <lochanlochu1310@gmail.com>
+Date:   Mon Aug 25 09:33:46 2025 +0530
+
+    v4
+
+commit e8726987627b76ca6e3aa93a1b3e59d6c0e8e7df
+Author: Lochan-01 <lochanlochu1310@gmail.com>
+Date:   Mon Aug 25 09:33:11 2025 +0530
+
+    v3
+
+commit d96ee4f3dbe5bf578d8566191b47fd941596527a
+Author: Lochan-01 <lochanlochu1310@gmail.com>
+Date:   Mon Aug 25 09:32:01 2025 +0530
+
+    v2
+
+commit 7e44f4f32b4d34460ccaa5227ad1edb24f0c8e34
+Author: Lochan-01 <lochanlochu1310@gmail.com>
+Date:   Mon Aug 25 09:27:43 2025 +0530
+
+    v1
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ ^C
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git reset --hard d96ee4f3dbe5bf578d8566191b47fd941596527a
+HEAD is now at d96ee4f v2
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git reset --hard 37fd266d306fd4cb5669d92bbdb6ee261bdfd156
+HEAD is now at 37fd266 v4
+
+Student@M316-01 MINGW64 ~/Desktop/git (master)
+$ git push --set-u https://github.com/Lochan-01/class.git master
+info: please complete authentication in your browser...
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (12/12), 971 bytes | 69.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Lochan-01/class.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'https://github.com/Lochan-01/class.git/master'.
